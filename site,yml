@@ -1,6 +1,5 @@
 ---
-- name: Install Nagios
-  hosts: nagios_servers
+- hosts: all
   become: true
   roles:
-    - common
+    - role: roles/nagios
